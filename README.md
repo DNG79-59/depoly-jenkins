@@ -27,25 +27,26 @@ services:
 
 2.拉到页面最下面，把https改成http。这里其实就已经可以重启jenkins，使用了。但是为了更方便使用，我们可以设置镜像源，下载插件更快速！
 
-图片[2] - 替换Jenkins插件地址为国内镜像源 - 正则时光
 3.修改上面的URL地址为国内镜像源：选择下面任何一个即可！
-
+```
 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
-
+```
+```
 http://mirror.esuni.jp/jenkins/updates/update-center.json
-
+```
+```
 http://mirror.xmission.com/jenkins/updates/update-center.json
-
+```
 图片[[3]]<img width="601" height="191" alt="image" src="https://github.com/user-attachments/assets/e914280d-fcb1-4cb8-8a9a-3ab93a1857b7" />
- - 替换Jenkins插件地址为国内镜像源 - 正则时光
+
 4.工作目录/updates/default.json设置
 
-updates.jenkins.io/download或updates.jenkins-ci.org全部替换成选择的镜像源mirrors.tuna.tsinghua.edu.cn/jenkins
+updates.jenkins.io/download或updates.jenkins-ci.org全部替换成选择的镜像源mirrors.tuna.tsinghua.edu.cn/jenkins  
 
-www.google.com全部替换成www.baidu.com或其它能打开的网页
+`www.google.com`全部替换成`www.baidu.com`或其它能打开的网页  
 
-图片[4] <img width="670" height="347" alt="image" src="https://github.com/user-attachments/assets/73c5245e-d206-464f-867e-71684bcaeaee" />
-- 替换Jenkins插件地址为国内镜像源 - 正则时光
+<img width="670" height="347" alt="image" src="https://github.com/user-attachments/assets/73c5245e-d206-464f-867e-71684bcaeaee" />
+
 5.保存后，重启Jenkins。ok!
 
 注意：使用https时，需要跳过ssl证书认证，不然可能会失败！如下操作  
